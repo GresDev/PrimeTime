@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="windows-1251" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+
+    <title>Спортивный клуб Единоборств "Прайм Тайм"</title>
+</head>
+
+<body>
+
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand bg-light navbar-light fixed-top" id="main-nav">
+        <div class="container">
+            <a asp-controller="Home" asp-action="Index" class="navbar-brand">"ПРАЙМ ТАЙМ"</a>
+
+            <div style="width: auto;">
+                <ul class="navbar-nav ml-auto">
+                    <li class=" nav-item mr-2">
+                        <a href="https://www.facebook.com/SportClubPrimeTime/">
+                            <i class="fab fa-facebook-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item mr-2">
+                        <a href="https://vk.com/sarangov_club">
+                            <i class="fab fa-vk fa-2x"
+                               aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://instagram.com/sport_club_prime_time?igshid=oek6yoh364l4">
+                            <i class="fab fa-instagram-square fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section-->
+
+    <header id="home-section">
+
+        <div class="home-inner container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div>
+                        <img src="images/logo.png" alt="" class="img-fluid" />
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="display-3">
+                            ПРАЙМ ТАЙМ
+                        </h1>
+                    </div>
+                    <div class="mt-4">
+                        <h1 class="display-4">
+                            Спортивный Клуб Единоборств
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- ABOUT SECTION-->
+
+    @RenderBody()
+
+    <!-- FOOTER -->
+
+    <footer id="main-footer" class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center pt-2">
+                    <p class="lead">
+                        Москва, <span id="year"></span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $("#year").text(new Date().getFullYear());
+    </script>
+
+</body>
+
+</html>

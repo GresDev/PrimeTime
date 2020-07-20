@@ -1,0 +1,20 @@
+﻿body {
+    background: #fff;
+    color: #333;
+}
+
+.navbar {
+    border-bottom: #aaa 1px solid;
+}
+
+#about-section {
+    border-bottom: #aaa 1px solid;
+}
+
+.main-nav {
+    font-weight: lighter;
+}
+
+#home-section .home-inner {
+    padding-top: 100px;
+}
